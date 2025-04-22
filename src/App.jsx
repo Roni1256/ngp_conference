@@ -9,6 +9,7 @@ import Venue from './Pages/Venue'
 import Registration from './Pages/Registration'
 import Committee from './Pages/Committee'
 import Schedule from './Pages/Schedule'
+import Footer from './Component/Footer'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/committee' element={<Committee/>}/>
         <Route path='/schedule' element={<Schedule/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }
