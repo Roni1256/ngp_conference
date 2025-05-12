@@ -3,7 +3,7 @@ const Home = () => {
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-3xl lg:text-6xl text-neutral-800 font-bold text-center w-full leading-tight">
-          Welcome to NGP Conference 2025
+          Welcome to NGP Conference 2026
         </h1>
         <h2 className="text-md md:text-2xl lg:text-3xl mt-4 text-center text-neutral-600">
           3 rd International Conference on Applied Intelligence and
