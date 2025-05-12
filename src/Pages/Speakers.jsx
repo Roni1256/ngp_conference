@@ -3,7 +3,7 @@
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div className="text-center">
           <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
-            <span className="text-2xl text-white font-bold">{text)}</span>
+            <span className="text-2xl text-white font-bold">{text}</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-800 mb-2">{name}</h3>
           <p className="text-md text-indigo-600 font-medium mb-2">{title}</p>
