@@ -6,8 +6,14 @@ const Navigation = () => {
     const location = useLocation()
     const [isOpen, setIsOpen] = useState(false)
 
+    const navigationLinks = [
+      { path: '/call-for-papers', label: 'Call for Papers' },
+      { path: '/speakers', label: 'Speakers' },
+      { path: '/venue', label: 'Venue' },
+    ]
+
   return (
-    <nav className='py-10 bg-white px-10'>
+    <nav className='py-10 bg-white md:px-10'>
       <div className='container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center'>
         <div className='w-full lg:w-auto flex justify-between items-center'>
           <div className='flex items-center cursor-pointer' onClick={()=>{Navigate('/')}}>
@@ -30,13 +36,15 @@ const Navigation = () => {
           </button>
         </div>
         <div className={`${isOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 w-full lg:w-auto mt-10 lg:mt-0`}>
-          <Link to="/call-for-papers" className={`hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/call-for-papers' ? 'text-blue-500' : 'text-neutral-700'}`}>Call for Papers</Link>
-          <Link to="/speakers" className={` hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/speakers' ? 'text-blue-500' : 'text-neutral-700'}`}>Speakers</Link>
-          <Link to="/publications" className={` hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/publications' ? 'text-blue-500' : 'text-neutral-700'}`}>Publications</Link>
-          <Link to="/venue" className={` hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/venue' ? 'text-blue-500' : 'text-neutral-700'}`}>Venue</Link>
-          <Link to="/registration" className={` hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/registration' ? 'text-blue-500' : 'text-neutral-700'}`}>Registration & Fees</Link>
-          <Link to="/committee" className={` hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/comittee' ? 'text-blue-500' : 'text-neutral-700'}`}>Committee</Link>
-          <Link to="/schedule" className={` hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === '/schedule' ? 'text-blue-500' : 'text-neutral-700'}`}>Schedule</Link>
+          {navigationLinks.map((link) => (
+            <Link 
+              key={link.path}
+              to={link.path} 
+              className={`hover:text-blue-500 font-medium transition-colors duration-300 ${location.pathname === link.path ? 'text-blue-500' : 'text-neutral-700'}`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
