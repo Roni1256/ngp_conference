@@ -1,6 +1,53 @@
-import React from 'react'
+  const SpeakerCard = ({ image, name, title, expertise }) => {
+    return (
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+            <span className="text-2xl text-white font-bold">{name.charAt(0)}</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">{name}</h3>
+          <p className="text-md text-indigo-600 font-medium mb-2">{title}</p>
+          <div className="w-16 h-1 bg-indigo-500 mx-auto my-3"></div>
+          <p className="mt-4 text-gray-600 text-sm leading-relaxed">{expertise}</p>
+        </div>
+      </div>
+    )
+}
+
 
 const Speakers = () => {
+   const speakers=[
+    {
+      name: "Dr. Jey Veerasamy",
+      affiliation: "Department of Computer Science, Erik Jonsson School of Engineering & Computer Science, The University of Texas at Dallas, USA",
+      role: "Keynote Speaker"
+    },
+    {
+      name: "Dr. Wong Wei Kitt",
+      affiliation: "Department of Electrical and Computer Engineering, Curtin University, Malaysia",
+      role: "Technical Program Chair"
+    },
+    {
+      name: "Dr. Wilfred Blessing N R",
+      affiliation: "College of Computing and Information Science, University of Technology and Applied Science, Ibri, Oman",
+      role: "Member, Review Committee"
+    },
+    {
+      name: "Mr. Ajith S",
+      affiliation: "Senior Security Engineer, Plum Desing, Inc, Hyderabad, India",
+      role: "Industry Speaker (Next-Gen Communication and Security Systems)"
+    },
+    {
+      name: "Prof. U Dinesh Kumar",
+      affiliation: "Indian Institute of Management, Bangalore (IIMB), India",
+      role: "Technical Program Chair"
+    },
+    {
+      name: "Mr. Pandiyan Adiyapatham",
+      affiliation: "Assistant Vice President, Cognizant, Chennai, India",
+      role: "Industry Speaker (Transforming Intelligence across Industries with Gen AI)"
+    }
+  ]
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -13,53 +60,14 @@ const Speakers = () => {
           </p>
         </div>
         <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Speaker Card */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              className="h-48 w-full object-cover"
-              src="https://placekitten.com/400/300"
-              alt="Speaker"
+          {speakers.map((speaker, index) => (
+            <SpeakerCard
+              key={index}
+              name={speaker.name}
+              title={speaker.role}
+              expertise={speaker.affiliation}
             />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900">John Doe</h3>
-              <p className="text-sm text-gray-500">CEO, Tech Company</p>
-              <p className="mt-4 text-gray-600">
-                Expert in artificial intelligence and machine learning
-              </p>
-            </div>
-          </div>
-
-          {/* Speaker Card */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              className="h-48 w-full object-cover"
-              src="https://placekitten.com/401/300"
-              alt="Speaker"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900">Jane Smith</h3>
-              <p className="text-sm text-gray-500">CTO, Innovation Labs</p>
-              <p className="mt-4 text-gray-600">
-                Blockchain and cryptocurrency specialist
-              </p>
-            </div>
-          </div>
-
-          {/* Speaker Card */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              className="h-48 w-full object-cover"
-              src="https://placekitten.com/402/300"
-              alt="Speaker"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900">Mike Johnson</h3>
-              <p className="text-sm text-gray-500">Lead Developer, WebTech</p>
-              <p className="mt-4 text-gray-600">
-                Full-stack development and cloud architecture expert
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
