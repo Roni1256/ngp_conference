@@ -59,7 +59,7 @@ const Speakers = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Our Speakers
+            Keynote Speakers
           </h2>
           <p className="mt-4 text-lg text-gray-500">
             Meet our distinguished speakers and industry experts

@@ -10,6 +10,9 @@ import Registration from './Pages/Registration'
 import Committee from './Pages/Committee'
 import Schedule from './Pages/Schedule'
 import Footer from './Component/Footer'
+import Reviewers from './Pages/Reviewers'
+import PrevConf from './Pages/PrevConf'
+import Payment from './Pages/Payment'
 
 const App = () => {
   return (
@@ -20,6 +23,10 @@ const App = () => {
         <Route path='/call-for-papers' element={<CallForPaper/>}/>
         <Route path='/speakers' element={<Speakers />} />
         <Route path='/venue' element={<Venue />} />
+        <Route path='/committee' element={<Committee/>}/>
+        <Route path='/tpc-member' element={<Reviewers/>}/>
+        <Route path='/previous-conference' element={<PrevConf/>}/>
+        <Route path='/payment' element={<Payment/>}/>
       </Routes>
       <Footer/>
     </div>
@@ -27,3 +34,4 @@ const App = () => {
 }
 
 export default App
+

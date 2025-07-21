@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Conference Info */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">NGP Conference</h2>
+            <h2 className="text-2xl font-bold mb-4">AICOST-2026</h2>
             <p className="text-gray-300 leading-relaxed">
-              International Conference on Applied Intelligence and Communication Technologies
+              Emerging Trends in Applied Intelligence, Communication, and Security Technologies
             </p>
           </div>
 
@@ -35,8 +35,8 @@ const Footer = () => {
               </p>
               <p className="flex items-center">January 2026</p>
               <p className="flex items-center">9:00 AM - 4:00 PM</p>
-              <p className="flex items-center">Email: conference@ngp.edu.in</p>
-              <p className="flex items-center">Tel: +91 (422) XXX XXXX</p>
+              <p className="flex items-center">Email: aicost2026@drngpasc.ac.in</p>
+              <p className="flex items-center">Tel: +91 04222 369 253</p>
             </address>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} NGP Conference. All rights reserved.
+              &copy; {currentYear} AICOST. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
