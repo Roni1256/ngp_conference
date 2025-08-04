@@ -128,7 +128,7 @@ const Committee = () => {
       institution: "Curtin University Malaysia",
     },
     {
-      committee: "Sivarahman Eswaran ",
+      committee: "Sivaraman Eswaran ",
       institution: "Curtin University Malaysia",
     },
     {

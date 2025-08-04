@@ -23,7 +23,7 @@ const CallForPaper = () => {
     },
     {
       title: "Security and Forensics",
-      list: ["Cyber Security", "Digital Forensics", "Blockchain Technology"],
+      list: ["Cyber Security", "Digital Forensics", "Blockchain Technology","Cyber Physical System","Financial Security"  ],
     },
     {
       title: "Cloud, High Performance and Distributed Computing",
@@ -119,7 +119,7 @@ const CallForPaper = () => {
               <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-neutral-700 mb-4 border-b pb-3 border-b-blue-200 flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+                    <div className="w-[8px] h-[8px] bg-blue-600 rounded-full mr-2"></div>
                     {topic.title}
                   </h3>
                   <ul className="space-y-3 text-gray-700">

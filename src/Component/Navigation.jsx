@@ -13,11 +13,11 @@ const Navigation = () => {
     { path: "/call-for-papers", label: "Call for Papers" },
     { path: "/speakers", label: "Speakers" },
     { path: "/venue", label: "Venue" },
-
+    {path:"/contact",label:"Contact Us"}
   ];
 
   return (
-    <nav className="py-10 bg-white md:px-10">
+    <nav className="py-10 bg-white md:px-10 relative">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center">
         <div className="w-full lg:w-auto flex justify-between items-center">
           <div
@@ -35,9 +35,22 @@ const Navigation = () => {
               AICOST-2026
             </span>
           </div>
+        </div>
+
+        <div className="flex items-center gap-6">
+          <Link
+            to={"/payment"}
+            className={`hover:bg-blue-500 bg-blue-400 text-white px-2 py-1 rounded-lg font-medium transition-colors duration-300 ${
+              location.pathname === "/payment"
+                ? "text-blue-500"
+                : "text-neutral-700"
+            }`}
+          >
+            Registration & Payment
+          </Link>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-neutral-700"
+            className=" text-neutral-700 bg-gray-100 border border-gray-200 rounded-md p-2 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer"
           >
             {isOpen ? (
               <svg
@@ -71,15 +84,16 @@ const Navigation = () => {
           </button>
         </div>
         <div
-          className={`${
-            isOpen ? "flex" : "hidden"
-          } lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 w-full lg:w-auto mt-10 lg:mt-0`}
+          className={`fixed top-0 left-0 h-screen max-w-[400px] w-full flex flex-col bg-white p-5 duration-300 transition-all ease-in-out  gap-10 py-10 shadow-xl ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
+          <h1 className="text-2xl font-semibold">Menu</h1>
           {navigationLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`hover:text-blue-500 font-medium transition-colors duration-300 ${
+              className={`hover:text-blue-500 font-medium transition-colors duration-300 text-xl w-full hover:bg-gray-100 p-2 ${
                 location.pathname === link.path
                   ? "text-blue-500"
                   : "text-neutral-700"
@@ -89,16 +103,6 @@ const Navigation = () => {
             </Link>
           ))}
         </div>
-        <Link
-          to={"/payment"}
-          className={`hover:text-blue-500 font-medium transition-colors duration-300 ${
-            location.pathname === '/payment'
-              ? "text-blue-500"
-              : "text-neutral-700"
-          }`}
-        >
-          Registration & Payment
-        </Link>
       </div>
     </nav>
   );

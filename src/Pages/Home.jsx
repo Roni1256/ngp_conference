@@ -2,23 +2,23 @@ const Home = () => {
   const dates = [
     {
       event: "Full paper submission",
-      date: "25 November 2025",
+      date: "25, November 2025",
     },
     {
       event: "Full paper acceptance",
-      date: "01 December 2025",
+      date: "01, December 2025",
     },
     {
       event: "Close registration & payment",
-      date: "15 December 2025",
+      date: "15, December 2025",
     },
     {
       event: "Final camera ready",
-      date: "15 December 2025",
+      date: "15, December 2025",
     },
     {
-      event: "Conference dates",
-      date: "03 January 2026",
+      event: "Conference date",
+      date: "03, January 2026",
     },
   ];
 
@@ -26,7 +26,7 @@ const Home = () => {
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-3xl lg:text-6xl text-neutral-800 font-bold text-center w-full leading-tight">
-          Emerging Trends in Applied Intelligence, Communication, and Security
+          Emerging Trends in Applied Intelligence, Communication and Security
           Technologies
         </h1>
         <h2 className="text-md md:text-2xl lg:text-3xl mt-4 text-center text-neutral-600">
@@ -109,6 +109,24 @@ const Home = () => {
               and applied research.
             </p>
           </div>
+        </div>
+        <div className="mt-16 flex items-center justify-center gap-20">
+          <img
+            src="./curtin.png"
+            alt="ICT logo"
+            className="max-w-[120px] md:max-w-[200px] lg:max-w-[200px] w-full mt-10"
+          />
+          <img
+            src="./analyticIndia.png"
+            alt="ICT logo"
+            className="max-w-[120px] md:max-w-[200px] lg:max-w-[200px] w-full mt-10"
+          />
+
+          <img
+            src="./ICT.png"
+            alt="ICT logo"
+            className="max-w-[120px] md:max-w-[200px] lg:max-w-[200px] w-full"
+          />
         </div>
         <div className="mt-16">
           <div className="p-6">

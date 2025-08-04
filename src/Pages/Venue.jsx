@@ -5,7 +5,7 @@ const Venue = () => {
     <div className="min-h-screen  py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-extrabold text-neutral-900 mb-16 text-center tracking-tight">
-          Conference Venue
+          NGP Conference Venue
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-white rounded-2xl  p-8 transform hover:scale-105 transition-transform duration-300">
@@ -18,7 +18,7 @@ const Venue = () => {
                 </svg>
                 <div>
                   <h3 className="text-base font-semibold text-gray-800">Address</h3>
-                  <p className="text-sm text-gray-600">Conference Centre,</p>
+                  <p className="text-sm text-gray-600">NGP Conference Center,</p>
                   <p className="text-sm text-gray-600">Dr. N.G.P Arts and Science College,</p>
                   <p className="text-sm text-gray-600">Coimbatore, India</p>
                 </div>

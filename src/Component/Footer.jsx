@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold mb-4">AICOST-2026</h2>
             <p className="text-gray-300 leading-relaxed">
-              Emerging Trends in Applied Intelligence, Communication, and Security Technologies
+              Emerging Trends in Applied Intelligence, Communication and Security Technologies
             </p>
           </div>
 
@@ -31,12 +31,11 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
             <address className="not-italic text-gray-300 space-y-2">
               <p className="flex items-center">
-                <span className="block">Conference Centre,<br />Dr. N.G.P Arts and Science College,<br />Coimbatore, India</span>
+                <span className="block">NGP Conference Center,<br />Dr. N.G.P Arts and Science College,<br />Coimbatore, India</span>
               </p>
-              <p className="flex items-center">January 2026</p>
-              <p className="flex items-center">9:00 AM - 4:00 PM</p>
+              <p className="flex items-center">3rd January 2026</p>
               <p className="flex items-center">Email: aicost2026@drngpasc.ac.in</p>
-              <p className="flex items-center">Tel: +91 04222 369 253</p>
+              <p className="flex items-center">Tel: +91 4222 369 253</p>
             </address>
           </div>
         </div>

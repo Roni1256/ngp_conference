@@ -9,7 +9,7 @@ const Payment = () => {
     },
     {
       name: "Research Scholar/Student",
-      inr: "8,0000",
+      inr: "8,000",
       usd: "130",
     },
     {

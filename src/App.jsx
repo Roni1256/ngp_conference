@@ -13,6 +13,7 @@ import Footer from './Component/Footer'
 import Reviewers from './Pages/Reviewers'
 import PrevConf from './Pages/PrevConf'
 import Payment from './Pages/Payment'
+import Contact from './Pages/Contact'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/tpc-member' element={<Reviewers/>}/>
         <Route path='/previous-conference' element={<PrevConf/>}/>
         <Route path='/payment' element={<Payment/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
     </div>
