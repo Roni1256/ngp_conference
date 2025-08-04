@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-3xl lg:text-6xl text-neutral-800 font-bold text-center w-full leading-tight">
+        <h1 className="text-3xl lg:text-6xl text-neutral-800 font-bold text-center w-full leading-12 lg:leading-20">
           Emerging Trends in Applied Intelligence, Communication and Security
           Technologies
         </h1>
@@ -69,7 +69,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="mt-16 flex  justify-center gap-10">
+        <div className="mt-16 flex flex-col lg:flex-row  justify-center gap-10">
           <div className="p-8 flex flex-col items-center">
             <h3 className="text-2xl font-bold text-neutral-800 mb-4 text-center">
               Conference Objectives
@@ -110,7 +110,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="mt-16 flex items-center justify-center gap-20">
+        <div className="mt-16 flex items-center justify-center gap-10 lg:gap-20">
           <img
             src="./curtin.png"
             alt="ICT logo"

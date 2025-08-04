@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navigation = () => {
@@ -16,9 +16,11 @@ const Navigation = () => {
     {path:"/contact",label:"Contact Us"}
   ];
 
+
+
   return (
     <nav className="py-10 bg-white md:px-10 relative">
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center">
+      <div className="container mx-auto px-4 flex flex-row justify-between items-center">
         <div className="w-full lg:w-auto flex justify-between items-center">
           <div
             className="flex items-center cursor-pointer"
@@ -40,7 +42,7 @@ const Navigation = () => {
         <div className="flex items-center gap-6">
           <Link
             to={"/payment"}
-            className={`hover:bg-blue-500 bg-blue-400 text-white px-2 py-1 rounded-lg font-medium transition-colors duration-300 ${
+            className={`text-sm hover:bg-blue-500 bg-blue-400 text-white px-2 py-1 rounded-lg font-medium transition-colors duration-300 ${
               location.pathname === "/payment"
                 ? "text-blue-500"
                 : "text-neutral-700"
