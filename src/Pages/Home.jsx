@@ -2,23 +2,23 @@ const Home = () => {
   const dates = [
     {
       event: "Full paper submission",
-      date: "25, November 2025",
+      date: "25, November, 2025",
     },
     {
       event: "Full paper acceptance",
-      date: "01, December 2025",
+      date: "01, December, 2025",
     },
     {
       event: "Close registration & payment",
-      date: "15, December 2025",
+      date: "15, December, 2025",
     },
     {
       event: "Final camera ready",
-      date: "15, December 2025",
+      date: "15, December, 2025",
     },
     {
       event: "Conference date",
-      date: "03, January 2026",
+      date: "03, January, 2026",
     },
   ];
 
