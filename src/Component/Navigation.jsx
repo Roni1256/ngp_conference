@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = ({ isOpen, setIsOpen }) => {
   const Navigate = useNavigate();
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
 
   const navigationLinks = [
     { path: "/committee", label: "Committee" },
@@ -13,13 +12,11 @@ const Navigation = () => {
     { path: "/call-for-papers", label: "Call for Papers" },
     { path: "/speakers", label: "Speakers" },
     { path: "/venue", label: "Venue" },
-    {path:"/contact",label:"Contact Us"}
+    { path: "/contact", label: "Contact Us" },
   ];
 
-
-
   return (
-    <nav className="py-10 bg-white md:px-10 relative">
+    <nav className="py-10 bg-white md:px-10 relative" >
       <div className="container mx-auto px-4 flex flex-row justify-between items-center">
         <div className="w-full lg:w-auto flex justify-between items-center">
           <div
@@ -38,7 +35,26 @@ const Navigation = () => {
             </span>
           </div>
         </div>
-
+        <div className="lg:flex items-center justify-center gap-10 hidden " onClick={()=>setIsOpen(false)}>
+          <button 
+          className="text-gray-600 hover:text-gray-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
+          onClick={() => Navigate("/committee")}
+          >
+            Committee
+          </button>
+          <button 
+          className="text-gray-600 hover:text-gray-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
+          onClick={() => Navigate("/call-for-papers")}
+          >
+            Call for Papers
+          </button>
+          <button 
+          className="text-gray-600 hover:text-gray-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
+          onClick={() => Navigate("/contact")}
+          >
+            Contact
+          </button>
+        </div>
         <div className="flex items-center gap-6">
           <Link
             to={"/payment"}

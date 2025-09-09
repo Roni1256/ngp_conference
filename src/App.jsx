@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Navigation from './Component/Navigation'
@@ -16,10 +16,12 @@ import Payment from './Pages/Payment'
 import Contact from './Pages/Contact'
 
 const App = () => {
+  const [isOpen,setOpen]=useState(false)
   return (
-    <div className='font-display'>
-      <Navigation/>
-      <Routes>
+    <div className='font-display' >
+      <Navigation isOpen={isOpen} setIsOpen={setOpen}/>
+      <div className="" onClick={()=>setOpen(false)}>
+      <Routes >
         <Route path='/' element={<Home />} />
         <Route path='/call-for-papers' element={<CallForPaper/>}/>
         <Route path='/speakers' element={<Speakers />} />
@@ -31,6 +33,7 @@ const App = () => {
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
+      </div>
     </div>
   )
 }
