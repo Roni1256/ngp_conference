@@ -37,19 +37,19 @@ const Navigation = ({ isOpen, setIsOpen }) => {
         </div>
         <div className="lg:flex items-center justify-center gap-10 hidden " onClick={()=>setIsOpen(false)}>
           <button 
-          className="text-gray-600 hover:text-gray-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
+          className="text-blue-600 hover:underline hover:text-blue-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
           onClick={() => Navigate("/committee")}
           >
             Committee
           </button>
           <button 
-          className="text-gray-600 hover:text-gray-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
+          className="text-blue-600 hover:underline hover:text-blue-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
           onClick={() => Navigate("/call-for-papers")}
           >
             Call for Papers
           </button>
           <button 
-          className="text-gray-600 hover:text-gray-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
+          className="text-blue-600 hover:underline hover:text-blue-900 text-lg duration-300 transition-all ease-in-out cursor-pointer"
           onClick={() => Navigate("/contact")}
           >
             Contact
