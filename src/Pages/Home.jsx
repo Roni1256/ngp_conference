@@ -38,7 +38,7 @@ const Home = () => {
           </p>
           <p className="text-neutral-700">Coimbatore, Tamil Nadu, India</p>
           <p className="text-2xl font-bold text-center mt-4 text-neutral-800">
-            03 January, 2026
+            03, January, 2026
           </p>
         </div>
 
